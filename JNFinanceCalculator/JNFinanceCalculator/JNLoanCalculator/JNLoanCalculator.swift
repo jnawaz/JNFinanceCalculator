@@ -12,7 +12,7 @@ public class JNLoanCalculator {
 
     var loanAmount: Double = 0.0
     var apr: Double = 0.0
-    var loanTerm: Int = 0 // in Months
+    var loanTerm: Int = 0 // in months
 
     var monthlyRepayment: Double?
     var totalInterest: Double?
@@ -23,6 +23,14 @@ public class JNLoanCalculator {
         assert(Double(loanAmount) > 0.0, "Loan amount has to be greater than 0.00")
         assert(Int(loanTerm) > 0, "Loan term has to be greater than 0 months")
 
+        var dcmMonthlyRepayment, dcmTotalInterest, dcmTotalRepayment: NSDecimalNumber
+
+        let monthlyRate: Double = workoutMonthlyRate(interest: apr)
 
     }
+
+    func workoutMonthlyRate(interest: Double) -> Double {
+
+    }
+
 }
