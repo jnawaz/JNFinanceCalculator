@@ -8,7 +8,8 @@
 
 import Foundation
 
-public class JNLoanCalculator {
+@objc
+public class JNLoanCalculator: NSObject {
 
     var loanAmount: Double = 0.0
     var apr: Double = 0.0
