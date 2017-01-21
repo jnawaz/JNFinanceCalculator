@@ -30,7 +30,12 @@ public class JNLoanCalculator {
     }
 
     func workoutMonthlyRate(interest: Double) -> Double {
+        let firstComponent = 1.0 + (interest / 100.00)
+        let secondComponent = 1.0 / 12.0
 
+        let powers = pow(firstComponent, secondComponent)
+
+        return (powers - 1) * 100
     }
 
 }
