@@ -22,6 +22,16 @@ class JNFinanceCalculatorTests: XCTestCase {
     }
 
     func testLoanCalculator() {
+        let calculator: JNLoanCalculator = JNLoanCalculator()
+        calculator.loanAmount = 1764.19
+        calculator.apr = 9.9
+        calculator.loanTerm = 24
+
+        calculator.calculate()
+
+        XCTAssert(calculator.totalInterest == 179.41)
+        XCTAssert(calculator.monthlyRepayment == 80.98)
+        XCTAssert(calculator.totalRepayment == 1943.60)
 
     }
     

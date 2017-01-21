@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		60379006A91861F1E6BD5F57 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 603795401F7A3FBA7A4DF3A1 /* Info.plist */; };
-		60379254D8425BC8F0B1B570 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 603798B7CC81A21E71D0EC2F /* Info.plist */; };
+		603794F2A4C8ACF739FF7A91 /* JNLoanCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603792D594DEE58828E2E327 /* JNLoanCalculator.swift */; };
 		6037967471563DE1751FE4D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60379C098DAAD75AD3E8B201 /* LaunchScreen.storyboard */; };
 		6037980ACB8F8C9F78CBFB38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60379F07EEC852DD5027E93F /* Main.storyboard */; };
+		6037990C8246E811216000ED /* JNLoanCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603792D594DEE58828E2E327 /* JNLoanCalculator.swift */; };
 		60379A861AE5917E347AB300 /* JNFinanceCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6037966E5A88F91CFA622B1A /* JNFinanceCalculatorTests.swift */; };
-		60379BE72EB2D346F84C978D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6037958DB255AD44E812FF7A /* ViewController.swift */; };
 		60379C515B616C91162993BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60379EDCF74E59CE899D88E1 /* AppDelegate.swift */; };
 		60379F8FEAB4CE4645AD2D71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60379201E91FE2DC41D38829 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -31,8 +30,8 @@
 		60379188482DE33D6C5C2B93 /* JNFinanceCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JNFinanceCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		603791959E3B08E0223C3DF1 /* JNFinanceCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JNFinanceCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60379201E91FE2DC41D38829 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		603792D594DEE58828E2E327 /* JNLoanCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JNLoanCalculator.swift; sourceTree = "<group>"; };
 		603795401F7A3FBA7A4DF3A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
-		6037958DB255AD44E812FF7A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6037966E5A88F91CFA622B1A /* JNFinanceCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JNFinanceCalculatorTests.swift; sourceTree = "<group>"; };
 		603798B7CC81A21E71D0EC2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		60379EDCF74E59CE899D88E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -84,7 +83,7 @@
 				60379C098DAAD75AD3E8B201 /* LaunchScreen.storyboard */,
 				60379EDCF74E59CE899D88E1 /* AppDelegate.swift */,
 				60379F07EEC852DD5027E93F /* Main.storyboard */,
-				6037958DB255AD44E812FF7A /* ViewController.swift */,
+				60379BA2BE65CA234E754E9B /* JNLoanCalculator */,
 			);
 			path = JNFinanceCalculator;
 			sourceTree = "<group>";
@@ -96,6 +95,14 @@
 				6037966E5A88F91CFA622B1A /* JNFinanceCalculatorTests.swift */,
 			);
 			path = JNFinanceCalculatorTests;
+			sourceTree = "<group>";
+		};
+		60379BA2BE65CA234E754E9B /* JNLoanCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				603792D594DEE58828E2E327 /* JNLoanCalculator.swift */,
+			);
+			path = JNLoanCalculator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +149,7 @@
 		603799BE3E892FD69F1D0E61 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Jamil Nawaz";
 			};
 			buildConfigurationList = 60379C8CF27830EF325D9D7E /* Build configuration list for PBXProject "JNFinanceCalculator" */;
@@ -167,7 +175,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60379254D8425BC8F0B1B570 /* Info.plist in Resources */,
 				60379F8FEAB4CE4645AD2D71 /* Assets.xcassets in Resources */,
 				6037967471563DE1751FE4D1 /* LaunchScreen.storyboard in Resources */,
 				6037980ACB8F8C9F78CBFB38 /* Main.storyboard in Resources */,
@@ -178,7 +185,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60379006A91861F1E6BD5F57 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,7 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60379C515B616C91162993BC /* AppDelegate.swift in Sources */,
-				60379BE72EB2D346F84C978D /* ViewController.swift in Sources */,
+				603794F2A4C8ACF739FF7A91 /* JNLoanCalculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60379A861AE5917E347AB300 /* JNFinanceCalculatorTests.swift in Sources */,
+				6037990C8246E811216000ED /* JNLoanCalculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +401,7 @@
 				60379AB3277AE1CC23B396C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		60379F6320B2A0FE1542442C /* Build configuration list for PBXNativeTarget "JNFinanceCalculator" */ = {
 			isa = XCConfigurationList;
@@ -402,6 +410,7 @@
 				60379F3D9E2844A3FE48E82B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
